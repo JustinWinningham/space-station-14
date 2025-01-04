@@ -1,0 +1,66 @@
+- type: entity
+  name: Security K9
+  parent: [SimpleMobBase, MobCombat, StripableInventoryBase]
+  id: MobSecurityK9
+  description: Enforcer of space paw.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Pet/corgi.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: ian
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: ian
+      Critical:
+        Base: ian_dead
+      Dead:
+        Base: ian_dead
+  - type: Physics
+  - type: Speech
+    speechVerb: Canine
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Inventory
+    speciesId: dog
+    templateId: k9
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 3
+  - type: ReplacementAccent
+    accent: dog
+  - type: InteractionPopup
+    interactSuccessString: petting-success-soft-floofy
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/small_dog_bark_happy.ogg
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-k9
+  - type: MobPrice
+    price: 400
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Pierce: 15
+        Blunt: 1
+    bluntStaminaDamageFactor: 20.0
+  - type: Tag
+    tags:
+    - VimPilot

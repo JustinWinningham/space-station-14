@@ -465,6 +465,9 @@
   id: DonkPocket
 
 - type: Tag
+  id: DogSuit
+
+- type: Tag
   id: Donut
 
 - type: Tag

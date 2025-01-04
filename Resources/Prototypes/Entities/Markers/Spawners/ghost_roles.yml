@@ -188,3 +188,25 @@
     - state: green
     - sprite: Mobs/Silicon/chassis.rsi
       state: derelict_icon
+
+# Security K9 - we are defining the ghost role spawner and the surrounding infrastructure for the mob here - not the mob itself (that's handled as part of the prototype)
+- type: entity
+  categories: [HideSpawnMenu, Spawner ]
+  parent: GhostRole
+  id: SpawnPointSecurityK9
+  name: security K9 spawn point
+  components:
+    - type: GhostRole
+      name: ghost-role-information-security-k9-name
+      description: ghost-role-information-securityK9-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: default # look up other options for this
+    - type: GhostRoleMobSpawner
+      prototype: MobSecurityK9 # need to create this prototype
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+      - state: green
+      - sprite: Mobs/Pets/corgi.rsi
+        state: narsian
