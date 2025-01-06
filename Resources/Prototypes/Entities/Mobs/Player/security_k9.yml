@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Pet/corgi.rsi
+    sprite: Mobs/Pets/corgi.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: ian
@@ -39,6 +39,19 @@
     spawned:
     - id: FoodMeat
       amount: 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: MeleeWeapon
+    altDisarm: true
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 6
   - type: ReplacementAccent
     accent: dog
   - type: InteractionPopup
@@ -55,12 +68,17 @@
     attributes:
       proper: true
       gender: male
-  - type: MeleeWeapon
-    damage:
-      groups:
-        Pierce: 15
-        Blunt: 1
-    bluntStaminaDamageFactor: 20.0
   - type: Tag
     tags:
     - VimPilot
+
+
+# TODO:
+# No sfx on speak
+# Modify move speed
+# implement sniffing
+# Bark alert ability
+# bug: cannot force equip air tank message - but you can and should be able to
+# resprite
+# More testing on a real round to ensure spawning and all that correctly.
+# spawn event

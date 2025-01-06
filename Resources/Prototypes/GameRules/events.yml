@@ -584,3 +584,15 @@
       min: 1
       max: 1
       pickPlayer: false
+
+#- type: entity
+#  parent: BaseGameRule
+#  id: SecurityK9Spawn
+#  components:
+#  - type: StationEvent
+#    weight: 10
+#    earliestStart: 0
+#    reoccurrenceDelay: 90
+#    minimumPlayers: 15
+#    duration: null
+#  - type:

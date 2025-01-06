@@ -192,7 +192,7 @@
 # Security K9 - we are defining the ghost role spawner and the surrounding infrastructure for the mob here - not the mob itself (that's handled as part of the prototype)
 - type: entity
   categories: [HideSpawnMenu, Spawner ]
-  parent: GhostRole
+  parent: SpawnPointSecurityOfficer
   id: SpawnPointSecurityK9
   name: security K9 spawn point
   components:
