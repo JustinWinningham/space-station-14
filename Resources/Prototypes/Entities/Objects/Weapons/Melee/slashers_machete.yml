@@ -1,0 +1,40 @@
+- type: entity
+  parent: BaseItem
+  id: BaseSlasherBlade
+  abstract: true
+  components:
+  - type: Sharp
+  - type: Execution
+    doAfterDuration: 3.0
+  - type: MeleeWeapon
+    wideAnimationRotation: -160
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Utensil
+    types:
+    - Knife
+  - type: Tool
+    qualities:
+    - Slicing
+
+- type: entity
+  name: Slasher's Machete
+  parent: [ BaseSlasherBlade, BaseMajorContraband ]
+  id: SlasherMachete
+  description: A large, vicious looking blade, rusty and covered in blood
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/machete.rsi
+  - type: MeleeWeapon
+    attackRate: 2.0
+    damage:
+      types:
+        Slash: 14
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    sprite: Objects/Weapons/Melee/machete.rsi
+  - type: DisarmMalus
+    malus: 1.0

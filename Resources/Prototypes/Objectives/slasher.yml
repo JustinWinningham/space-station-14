@@ -1,0 +1,29 @@
+- type: entity
+  abstract: true
+  parent: BaseObjective
+  id: BaseSlasherObjective
+  components:
+    - type: Objective
+      # difficulty isn't used since all objectives are picked
+      difficulty: 1.5
+      issuer: objective-issuer-slasher
+    - type: RoleRequirement
+      roles:
+        mindRoles:
+          - SlasherRole
+
+
+- type: entity
+  parent: BaseSlasherObjective
+  id: KillCiviliansObjective
+  components:
+    - type: Objective
+      icon:
+        sprite: Objects/Tools/emag.rsi # todo
+        state: icon
+    - type: NumberObjective
+      min: 5
+      max: 10
+      title: objective-condition-kill-civilians-title
+      description: objective-condition-kill-civilians-description
+#    - type: KillCiviliansCondition # todo

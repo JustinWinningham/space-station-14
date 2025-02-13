@@ -143,6 +143,18 @@
     exclusiveAntag: true
   - type: NinjaRole
 
+# Slasher
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleSlasher
+  name: Maints Slasher Role
+  components:
+  - type: MindRole
+    antagPrototype: Slasher
+    roleType: SoloAntagonist
+    exclusiveAntag: true
+  - type: SlasherRole
+
 # Nukies
 - type: entity
   parent: BaseMindRoleAntag

@@ -208,3 +208,27 @@
     - state: green
     - sprite: Mobs/Silicon/chassis.rsi
       state: derelict_icon
+
+
+- type: entity
+  id: SpawnPointGhostSlasher
+  name: ghost role spawn point
+  suffix: slasher
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: ghost-role-information-slasher-name
+    description: ghost-role-information-slasher-description
+    rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleSlasher
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobSlasher
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - sprite: Mobs/Animals/regalrat.rsi
+      state: icon

@@ -1,0 +1,73 @@
+- type: entity
+  id: MobSlasher
+  parent:
+  - Incorporeal
+  - BaseMob
+  name: maints slasher
+  description: the maints slasher
+  components:
+  - type: Input
+    context: "ghost"
+  - type: Spectral
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 6
+    baseSprintSpeed: 6
+  - type: Sprite
+    sprite: Mobs/Ghosts/revenant.rsi
+    layers:
+    - state: active
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - Corporeal
+  - type: IntrinsicRadioReceiver
+  - type: ActiveRadio
+    channels:
+    - Common
+  - type: Eye
+    drawFov: false
+    visMask:
+    - Normal
+    - Ghost
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-slasher-name
+    description: ghost-role-information-slasher-description
+    rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleSlasher
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: Visibility
+    layer: 2 #ghost vis layer
+  - type: Slasher
+    materializeAction: ActionMaterialize
+    dematerializeAction: ActionDematerialize
+
+# Custom actions for slasher component / system
+- type: entity
+  id: ActionMaterialize
+  name: Materialize
+  description: Reveal yourself from the darkness
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/carp_rift.rsi
+      state: icon
+    event: !type:SlasherMaterializeActionEvent
+    useDelay: 1
+    priority: 3
+
+- type: entity
+  id: ActionDematerialize
+  name: Dematerialize
+  description: Fade into the shadows and become ethereal
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/carp_rift.rsi
+      state: icon
+    event: !type:SlasherDematerializeActionEvent
+    useDelay: 120
+    priority: 4

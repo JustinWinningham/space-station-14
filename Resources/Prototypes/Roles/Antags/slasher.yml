@@ -1,0 +1,30 @@
+- type: antag
+  id: Slasher
+  name: roles-antag-slasher-name
+  antagonist: true
+  setPreference: false
+  objective: roles-antag-slasher-objective
+  guides: [ SpaceNinja ] #TODO
+
+#Slasher Gear
+- type: startingGear
+  id: SlasherGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGladiator # placeholder
+    back: ClothingBackpackSatchel
+    mask: ClothingHeadHatWeldingMaskPainted
+#    head: ClothingHeadHelmetSpaceNinja
+#    eyes: ClothingEyesVisorNinja
+    gloves: ClothingHandsGlovesLeather
+#    outerClothing: ClothingOuterSuitSpaceNinja # Apron of some kind. armored apron maybe?
+    shoes: ClothingShoesGaloshes
+#    id: AgentIDCard
+#    ears: ClothingHeadsetGrey
+    pocket1: ChameleonProjector # maybe not if they have powers
+#    pocket2: empty
+    belt: Crowbar
+  inhand:
+  - Machete #todo
+  storage:
+    back:
+      - Chainsaw

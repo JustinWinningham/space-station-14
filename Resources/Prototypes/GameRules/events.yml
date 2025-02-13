@@ -243,6 +243,18 @@
   - type: RandomSpawnRule
     prototype: MobRevenant
 
+- type: entity
+  parent: BaseGameRule
+  id: SlasherSpawn
+  components:
+  - type: StationEvent
+    weight: 4.5
+    duration: 1
+    earliestStart: 15
+    minimumPlayers: 20
+  - type: RandomSpawnRule
+    prototype: MobSlasher
+
 # disabled until event is rewritten to be more interesting
 #- type: entity
 #  id: FalseAlarm
