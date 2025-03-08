@@ -587,7 +587,7 @@
 
 #- type: entity
 #  parent: BaseGameRule
-#  id: SecurityK9Spawn
+#  id: SecurityDogSpawn
 #  components:
 #  - type: StationEvent
 #    weight: 10

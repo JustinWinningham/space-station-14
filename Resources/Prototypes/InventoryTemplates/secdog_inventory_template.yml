@@ -1,5 +1,5 @@
 - type: inventoryTemplate
-  id: k9
+  id: secdog
   slots:
   - name: mask
     slotTexture: mask

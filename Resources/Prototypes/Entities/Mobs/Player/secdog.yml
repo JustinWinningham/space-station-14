@@ -1,7 +1,7 @@
 - type: entity
-  name: Security K9
+  name: Security Dog
   parent: [SimpleMobBase, MobCombat, StripableInventoryBase]
-  id: MobSecurityK9
+  id: MobSecurityDog
   description: Enforcer of space paw.
   components:
   - type: Sprite
@@ -34,7 +34,7 @@
         - MobLayer
   - type: Inventory
     speciesId: dog
-    templateId: k9
+    templateId: secdog
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -61,7 +61,7 @@
     interactSuccessSound:
       path: /Audio/Animals/small_dog_bark_happy.ogg
   - type: SentienceTarget
-    flavorKind: station-event-random-sentience-flavor-k9
+    flavorKind: station-event-random-sentience-flavor-secdog
   - type: MobPrice
     price: 400
   - type: Grammar
@@ -71,6 +71,7 @@
   - type: Tag
     tags:
     - VimPilot
+  - type: SecurityDog
 
 
 # TODO:

@@ -315,6 +315,6 @@ ghost-role-information-gingerbread-name = Gingerbread Man
 ghost-role-information-gingerbread-description = A being of pure holiday spirit.
                                      Spread molassesy goodness and to all good cheer.
 
-ghost-role-information-security-k9-name = Security K9 Unit
-ghost-role-information-securityK9-description = Find a security officer to aide, fight crime together.
+ghost-role-information-secdog-name = Security Dog Unit
+ghost-role-information-secdog-description = Find a security officer to aide, fight crime together.
                                      Make them to cry when you die in the line of duty.
