@@ -19,4 +19,6 @@ two-way-lever-cant = can't push the lever that way!
 
 recycler-count-items = Recycled {$items} objects.
 
+checkpoint-scanner-count-items = Destroyed {$items} pieces of contraband (excluding security or command items). This has been checked {$timesExamined} times.
+
 machine-already-in-use = {CAPITALIZE(THE($machine))} is already in use.
