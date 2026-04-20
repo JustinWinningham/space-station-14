@@ -63,6 +63,24 @@ uplink-second-hand-magazine-rifle-worn-desc = A .20 rifle magazine with a cracke
 uplink-second-hand-magazine-box-light-rifle-worn-name = Worn Light Rifle Box (.30 LR)
 uplink-second-hand-magazine-box-light-rifle-worn-desc = A 100-round .30 light rifle belt box that's been through it. Previous owner had eclectic taste — standard, incendiary, uranium, practice rounds, and foam darts, mixed throughout. Free.
 
+uplink-second-hand-magazine-box-pistol-worn-name = Worn Ammo Box (.35 auto)
+uplink-second-hand-magazine-box-pistol-worn-desc = A dented .35 auto ammo box rattling with a partial load. Previous owner had eclectic taste — expect a mix of standard, incendiary, uranium, practice, and foam rounds, shuffled freely. Free.
+
+uplink-second-hand-magazine-box-rifle-worn-name = Worn Ammo Box (.20 rifle)
+uplink-second-hand-magazine-box-rifle-worn-desc = A scuffed .20 rifle ammo box, partly filled with whatever was lying around. Standard, incendiary, uranium, practice, and foam rounds, in no particular order. Free.
+
+uplink-second-hand-magazine-box-shotgun-worn-name = Worn Ammo Box (.50 shotgun)
+uplink-second-hand-magazine-box-shotgun-worn-desc = A beat-up 16-shell shotgun box with a bent lid. Whoever packed this grabbed whatever fit — pellets, slugs, incendiary, beanbag, and uranium shells, unsorted. Free.
+
+uplink-second-hand-magazine-box-magnum-worn-name = Worn Ammo Box (.45 magnum)
+uplink-second-hand-magazine-box-magnum-worn-desc = A worn .45 magnum box, partially loaded with a dangerous mix. Standard, incendiary, uranium, and armor-piercing rounds rattling inside. Check before you chamber. Free.
+
+uplink-second-hand-magazine-box-caseless-worn-name = Worn Ammo Box (.25 caseless)
+uplink-second-hand-magazine-box-caseless-worn-desc = A corroded .25 caseless ammo box, half-empty and showing its age. Standard, practice, and foam-tipped rounds in a random shuffle. Free.
+
+uplink-second-hand-magazine-box-antimateriel-worn-name = Worn Ammo Box (.60 anti-materiel)
+uplink-second-hand-magazine-box-antimateriel-worn-desc = A battered .60 anti-materiel box with only a handful of rounds left. Whoever had this clearly put them to use — or lost the rest. Free.
+
 # Explosives
 uplink-second-hand-exgrenade-worn-name = Dud Explosive Grenade
 uplink-second-hand-exgrenade-worn-desc = An explosive grenade with degraded filler and a corroded fuse. Creates a much smaller explosion than standard — and the countdown is anywhere from 1.5 to 9 seconds.
@@ -91,10 +109,13 @@ uplink-second-hand-minibomb-worn-desc = A syndicate minibomb with a corroded det
 # Tools
 
 uplink-second-hand-c4-worn-name = Degraded C-4
-uplink-second-hand-c4-worn-desc = A block of C-4 with a sluggish detonator circuit. The 10-second fast-arm is completely gone — minimum arming delay is 30 seconds. It still breaches walls. Plan accordingly.
+uplink-second-hand-c4-worn-desc = A block of C-4 with a corroded detonator circuit. The delay is locked in somewhere between 3 and 45 seconds — you won't know until you arm it. It still breaches walls. Plan accordingly.
 
 uplink-second-hand-emag-worn-name = Worn Cryptographic Sequencer
 uplink-second-hand-emag-worn-desc = A cryptographic sequencer with corroded contacts and a failing power circuit. Holds a single charge at a time before needing to recharge. Make it count.
+
+uplink-second-hand-disposable-turret-worn-name = Worn Disposable Ballistic Turret
+uplink-second-hand-disposable-turret-worn-desc = Looks and functions like a normal electrical toolbox. Hit it to deploy a ballistic turret — theoretically allied to the Syndicate. Loaded with whatever was left in the bin: standard, practice, foam, and incendiary rounds mixed in. Can be converted back with a screwdriver.
 
 # Kits
 

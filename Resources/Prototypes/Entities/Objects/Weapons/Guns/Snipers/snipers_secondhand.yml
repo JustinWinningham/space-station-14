@@ -9,6 +9,10 @@
   - type: RandomDefects
   - type: Gun
     fireRate: 0.3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+      params:
+        variation: 0.35
   - type: GunWieldBonus
     minAngle: -2
     maxAngle: -4
@@ -36,6 +40,10 @@
   - type: RandomDefects
   - type: Gun
     fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+      params:
+        variation: 0.35
   - type: GunWieldBonus
     minAngle: -1
     maxAngle: -2

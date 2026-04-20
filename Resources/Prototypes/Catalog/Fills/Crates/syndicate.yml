@@ -30,3 +30,12 @@
   components:
     - type: SurplusBundle
       totalPrice: 125
+
+- type: entity
+  parent: [ CrateSyndicate, BaseSyndicateContraband ]
+  id: CrateSyndicateSecondHandSurplusBundle
+  name: Syndicate second hand surplus crate
+  description: Contains 20 telecrystals worth of completely random second-hand Syndicate items. Worn, damaged, and unpredictable — but cheap.
+  components:
+    - type: SecondHandSurplusBundle
+      totalPrice: 20

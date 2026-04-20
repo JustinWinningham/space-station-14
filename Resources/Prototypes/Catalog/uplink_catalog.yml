@@ -1186,6 +1186,21 @@
       - SurplusBundle
 
 - type: listing
+  id: UplinkSecondHandSurplusBundle
+  name: uplink-second-hand-surplus-bundle-name
+  description: uplink-second-hand-surplus-bundle-desc
+  productEntity: CrateSyndicateSecondHandSurplusBundle
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkDisruption
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
   id: UplinkStarterKit
   name: uplink-starter-kit-name
   description: uplink-starter-kit-desc

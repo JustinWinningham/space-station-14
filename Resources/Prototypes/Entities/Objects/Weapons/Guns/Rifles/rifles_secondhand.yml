@@ -11,6 +11,10 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
+      params:
+        variation: 0.35
   - type: GunWieldBonus
     minAngle: -18
     maxAngle: -15
@@ -28,3 +32,5 @@
     backfireChance: 0.04
     totalIntensity: 0.6
     maxIntensity: 0.5
+  - type: WornMagazineSlot
+    wornMagazineProto: MagazineRifleWorn

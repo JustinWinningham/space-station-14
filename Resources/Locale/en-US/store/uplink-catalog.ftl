@@ -288,6 +288,9 @@ uplink-surplus-bundle-desc = Contains 50 telecrystals worth of completely random
 uplink-super-surplus-bundle-name = Super Surplus Crate
 uplink-super-surplus-bundle-desc = Contains 125 telecrystals worth of completely random Syndicate items.
 
+uplink-second-hand-surplus-bundle-name = Second Hand Surplus Crate
+uplink-second-hand-surplus-bundle-desc = Contains 20 telecrystals worth of completely random second-hand Syndicate items. Worn, damaged, and unpredictable — but you get what you pay for.
+
 uplink-starter-kit-name = Basic Operative Bundle
 uplink-starter-kit-desc = Contains 40 telecrystals of basic operative gear. For those operatives who just don't know what they should buy.
 

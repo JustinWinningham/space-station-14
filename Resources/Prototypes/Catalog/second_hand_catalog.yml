@@ -89,9 +89,9 @@
   description: uplink-second-hand-l6-saw-worn-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi, state: icon }
   productEntity: WeaponLightMachineGunL6Worn
-  secondHandCategory: rareSecondHand
+  secondHandCategory: veryRareSecondHand
   cost:
-    Telecrystal: 6
+    Telecrystal: 9
 
 - type: listing
   id: UplinkSecondHandEnergyCrossbowWorn
@@ -112,7 +112,7 @@
   description: uplink-second-hand-esword-worn-desc
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword.rsi, state: icon }
   productEntity: EnergySwordWorn
-  secondHandCategory: veryRareSecondHand
+  secondHandCategory: rareSecondHand
   cost:
     Telecrystal: 4
 
@@ -183,6 +183,54 @@
   name: uplink-second-hand-magazine-box-light-rifle-worn-name
   description: uplink-second-hand-magazine-box-light-rifle-worn-desc
   productEntity: MagazineBoxLightRifleWorn
+  secondHandCategory: commonSecondHand
+  cost: {}
+
+- type: listing
+  id: UplinkSecondHandMagazineBoxPistolWorn
+  name: uplink-second-hand-magazine-box-pistol-worn-name
+  description: uplink-second-hand-magazine-box-pistol-worn-desc
+  productEntity: MagazineBoxPistolWorn
+  secondHandCategory: commonSecondHand
+  cost: {}
+
+- type: listing
+  id: UplinkSecondHandMagazineBoxRifleWorn
+  name: uplink-second-hand-magazine-box-rifle-worn-name
+  description: uplink-second-hand-magazine-box-rifle-worn-desc
+  productEntity: MagazineBoxRifleWorn
+  secondHandCategory: commonSecondHand
+  cost: {}
+
+- type: listing
+  id: UplinkSecondHandMagazineBoxShotgunWorn
+  name: uplink-second-hand-magazine-box-shotgun-worn-name
+  description: uplink-second-hand-magazine-box-shotgun-worn-desc
+  productEntity: MagazineBoxShotgunWorn
+  secondHandCategory: commonSecondHand
+  cost: {}
+
+- type: listing
+  id: UplinkSecondHandMagazineBoxMagnumWorn
+  name: uplink-second-hand-magazine-box-magnum-worn-name
+  description: uplink-second-hand-magazine-box-magnum-worn-desc
+  productEntity: MagazineBoxMagnumWorn
+  secondHandCategory: commonSecondHand
+  cost: {}
+
+- type: listing
+  id: UplinkSecondHandMagazineBoxCaselessRifleWorn
+  name: uplink-second-hand-magazine-box-caseless-worn-name
+  description: uplink-second-hand-magazine-box-caseless-worn-desc
+  productEntity: MagazineBoxCaselessRifleWorn
+  secondHandCategory: commonSecondHand
+  cost: {}
+
+- type: listing
+  id: UplinkSecondHandMagazineBoxAntiMaterielWorn
+  name: uplink-second-hand-magazine-box-antimateriel-worn-name
+  description: uplink-second-hand-magazine-box-antimateriel-worn-desc
+  productEntity: MagazineBoxAntiMaterielWorn
   secondHandCategory: commonSecondHand
   cost: {}
 
@@ -283,6 +331,16 @@
   secondHandCategory: rareSecondHand
   cost:
     Telecrystal: 2
+
+- type: listing
+  id: UplinkSecondHandDisposableTurretWorn
+  name: uplink-second-hand-disposable-turret-worn-name
+  description: uplink-second-hand-disposable-turret-worn-desc
+  icon: { sprite: /Textures/Objects/Tools/Toolboxes/toolbox_ele.rsi, state: icon }
+  productEntity: ToolboxElectricalTurretWornFilled
+  secondHandCategory: rareSecondHand
+  cost:
+    Telecrystal: 4
 
 # --- KITS ---
 

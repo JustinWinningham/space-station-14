@@ -1,0 +1,23 @@
+# Second-hand (worn/damaged) turret variants for the Second Hand uplink tab.
+
+# Worn disposable turret: fires a random mix of .35 pistol ammo types including practice and dart rounds.
+- type: entity
+  parent: WeaponTurretSyndicateDisposable
+  id: WeaponTurretSyndicateDisposableWorn
+  suffix: Second Hand
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistol
+    capacity: 50
+  - type: MixedAmmoFill
+    minFillFraction: 1.0
+    maxFillFraction: 1.0
+    entries:
+      - proto: CartridgePistol
+        weight: 5
+      - proto: CartridgePistolPractice
+        weight: 3
+      - proto: CartridgePistolFoam
+        weight: 2
+      - proto: CartridgePistolIncendiary
+        weight: 1

@@ -9,6 +9,8 @@
   - type: RandomDefects
   - type: LoosePowerConnectorDefect
     prob: 0.75
+    powerFailChance: 0.25
+    reactivateDelay: 3
   - type: ReducedDamageDefect
     prob: 0.70
   - type: DamageUserDefect
@@ -16,6 +18,11 @@
     damage:
       types:
         Heat: 5
+  - type: MeleeWeapon
+    soundSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.35
 
 # Worn energy dagger: same defect pool as energy sword.
 - type: entity
@@ -26,6 +33,8 @@
   - type: RandomDefects
   - type: LoosePowerConnectorDefect
     prob: 0.75
+    powerFailChance: 0.25
+    reactivateDelay: 3
   - type: ReducedDamageDefect
     prob: 0.70
   - type: DamageUserDefect
@@ -33,4 +42,9 @@
     damage:
       types:
         Heat: 5
+  - type: MeleeWeapon
+    soundSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.35
 

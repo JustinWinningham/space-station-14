@@ -24,15 +24,13 @@ public sealed class StaticShockDefectSystem : EntitySystem
 
     private void OnAfterInteract(Entity<StaticShockDefectComponent> ent, ref AfterInteractEvent args)
     {
-        // Only fire when used on an actual target.
-        if (args.Target == null)
-            return;
-
-        // Do nothing if we don't roll above our probability
         if (!_random.Prob(ent.Comp.ShockChance))
             return;
 
-        // Zap
+        // Validate the target right before applying the effect — only shock on valid item interactions.
+        if (args.Target is not { Valid: true })
+            return;
+
         _electrocution.TryDoElectrocution(
             args.User,
             ent.Owner,

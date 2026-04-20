@@ -1,20 +1,20 @@
 # Second-hand (defective) explosive variants for the Second Hand uplink tab.
 
-# Degraded C-4: minimum arming delay of 30 seconds instead of 10.
-# The detonator circuit is sluggish - the fast-arm option is gone.
+# Degraded C-4: randomized arming delay between 15 and 180 seconds, not adjustable.
+# The detonator circuit is corroded - the delay is locked in at spawn.
 - type: entity
   parent: C4
   id: C4Worn
   suffix: Second Hand
   components:
   - type: RandomDefects
-  - type: SimpleDefect
-    defectLabel: "sluggish detonator circuit"
+  - type: RandomFuseDefect
+    minDelay: 3
+    maxDelay: 45
   - type: TimerTrigger
     keysIn:
     - trigger
     - stuck
-    delay: 30
-    delayOptions: [30, 60, 120, 300]
+    delayOptions: []
     initialBeepDelay: 0
     beepSound: /Audio/Machines/Nuke/general_beep.ogg

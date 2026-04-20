@@ -9,6 +9,10 @@
   - type: RandomDefects
   - type: Gun
     fireRate: 6
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+      params:
+        variation: 0.35
   - type: GunWieldBonus
     minAngle: -12
     maxAngle: -12
@@ -27,3 +31,5 @@
     totalIntensity: 0.75
     maxIntensity: 0.5
   - type: BentSwitchDefect
+  - type: WornMagazineSlot
+    wornMagazineProto: MagazineBoxLightRifleWorn

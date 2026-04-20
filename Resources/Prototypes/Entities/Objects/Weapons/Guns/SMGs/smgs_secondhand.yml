@@ -16,6 +16,8 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      params:
+        variation: 0.35
   - type: GunWieldBonus
     minAngle: -10
     maxAngle: -10
@@ -38,3 +40,5 @@
     totalIntensity: 0.4
     maxIntensity: 0.25
   - type: BentSwitchDefect
+  - type: WornMagazineSlot
+    wornMagazineProto: MagazinePistolSubMachineGunWorn

@@ -139,3 +139,109 @@
         weight: 2
       - proto: CartridgeLightRifleFoam
         weight: 2
+
+- type: entity
+  parent: MagazineBoxPistol
+  id: MagazineBoxPistolWorn
+  suffix: Second Hand
+  components:
+  - type: MixedAmmoFill
+    minFillFraction: 0.4
+    maxFillFraction: 0.8
+    entries:
+      - proto: CartridgePistol
+        weight: 5
+      - proto: CartridgePistolIncendiary
+        weight: 2
+      - proto: CartridgePistolUranium
+        weight: 1
+      - proto: CartridgePistolPractice
+        weight: 3
+      - proto: CartridgePistolFoam
+        weight: 2
+
+- type: entity
+  parent: MagazineBoxRifle
+  id: MagazineBoxRifleWorn
+  suffix: Second Hand
+  components:
+  - type: MixedAmmoFill
+    minFillFraction: 0.4
+    maxFillFraction: 0.8
+    entries:
+      - proto: CartridgeRifle
+        weight: 5
+      - proto: CartridgeRifleIncendiary
+        weight: 2
+      - proto: CartridgeRifleUranium
+        weight: 1
+      - proto: CartridgeRiflePractice
+        weight: 2
+      - proto: CartridgeRifleFoam
+        weight: 2
+
+- type: entity
+  parent: BoxLethalshot
+  id: MagazineBoxShotgunWorn
+  suffix: Second Hand
+  components:
+  - type: MixedAmmoFill
+    minFillFraction: 0.5
+    maxFillFraction: 1.0
+    entries:
+      - proto: ShellShotgun
+        weight: 5
+      - proto: ShellShotgunSlug
+        weight: 2
+      - proto: ShellShotgunIncendiary
+        weight: 2
+      - proto: ShellShotgunBeanbag
+        weight: 2
+      - proto: ShellShotgunUranium
+        weight: 1
+
+- type: entity
+  parent: MagazineBoxMagnum
+  id: MagazineBoxMagnumWorn
+  suffix: Second Hand
+  components:
+  - type: MixedAmmoFill
+    minFillFraction: 0.5
+    maxFillFraction: 1.0
+    entries:
+      - proto: CartridgeMagnum
+        weight: 5
+      - proto: CartridgeMagnumIncendiary
+        weight: 2
+      - proto: CartridgeMagnumUranium
+        weight: 1
+      - proto: CartridgeMagnumAP
+        weight: 1
+
+- type: entity
+  parent: MagazineBoxCaselessRifle
+  id: MagazineBoxCaselessRifleWorn
+  suffix: Second Hand
+  components:
+  - type: MixedAmmoFill
+    minFillFraction: 0.4
+    maxFillFraction: 0.8
+    entries:
+      - proto: CartridgeCaselessRifle
+        weight: 5
+      - proto: CartridgeCaselessRiflePractice
+        weight: 2
+      - proto: CartridgeCaselessRifleFoam
+        weight: 2
+
+- type: entity
+  parent: MagazineBoxAntiMateriel
+  id: MagazineBoxAntiMaterielWorn
+  suffix: Second Hand
+  components:
+  - type: MixedAmmoFill
+    minFillFraction: 0.3
+    maxFillFraction: 0.7
+    entries:
+      - proto: CartridgeAntiMateriel
+        weight: 1

@@ -14,6 +14,8 @@
     - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+      params:
+        variation: 0.35
   - type: GunWieldBonus
     minAngle: -4
     maxAngle: -8
@@ -32,6 +34,8 @@
     totalIntensity: 0.5
     maxIntensity: 0.4
   - type: BentSwitchDefect
+  - type: WornMagazineSlot
+    wornMagazineProto: MagazineShotgunWorn
 
 # Worn Hushpup: blown suppressor baffles, gummed action, doubled spread.
 - type: entity
@@ -42,6 +46,10 @@
   - type: RandomDefects
   - type: Gun
     fireRate: 1
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+      params:
+        variation: 0.35
   - type: GunJamDefect
     prob: 0.70
     jamChance: 0.15
@@ -54,3 +62,5 @@
     backfireChance: 0.05
     totalIntensity: 0.5
     maxIntensity: 0.4
+  - type: WornMagazineSlot
+    wornMagazineProto: MagazineShotgunWorn
