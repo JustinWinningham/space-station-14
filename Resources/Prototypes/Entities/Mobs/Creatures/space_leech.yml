@@ -1,6 +1,6 @@
 - type: entity
   id: MobSpaceLeechTest
-  parent: [ BaseMob, BaseMobAnimal ]
+  parent: [ BaseMob, BaseMobAnimal, MobFlammable ]
   name: space leech
   description: Something ancient and hungry has found its way aboard.
   suffix: TEST
@@ -60,6 +60,26 @@
     bloodlossHealDamage:
       types:
         Bloodloss: -1
+
+  # ── Atmospherics ──────────────────────────────────────────────────────────
+  # Hand-authored rather than parenting MobAtmosExposed, because that prototype
+  # also brings MovedByPressure. Deliberately absent:
+  #   Barotrauma       - no pressure damage, so vacuum and overpressure are safe
+  #   MovedByPressure  - not shoved around by breaches or gas flow
+  #   ThermalRegulator - body temperature just tracks the air instead of being
+  #                      defended by metabolic heat, so hot rooms actually bite
+  # coldDamageThreshold 0 means the cold branch can never fire; only heat hurts.
+  # Flammability (Flammable + FireVisuals) comes from the MobFlammable parent.
+  - type: AtmosExposed
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TemperatureDamage
+    heatDamageThreshold: 325
+    coldDamageThreshold: 0
+    heatDamage: # per second, scales with temperature
+      types:
+        Heat: 1.5
 
   # ── Health ────────────────────────────────────────────────────────────────
   - type: MobState
